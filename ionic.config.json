@@ -1,0 +1,10 @@
+{
+  "name": "dmd_front",
+  "integrations": {
+    "capacitor": {
+      "enabled": false
+    },
+    "cordova": {}
+  },
+  "type": "angular"
+}

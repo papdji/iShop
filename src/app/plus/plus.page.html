@@ -1,0 +1,66 @@
+<app-header slot="top"></app-header>
+
+<ion-content>
+    <div class="ion-margin">
+        <div class="p-grid">
+            <div class="top-grid profil">
+                <div class="w-100 rr-flexed">
+                    <span class="ellipsis mt-10 mr-10"><ion-icon name="ellipsis-horizontal"></ion-icon></span>
+                </div>
+                <div class="w-100 r-flexed">
+                    <div class="img-container">
+                        <div class="user-img">
+                            <img src="assets/img/dina.jpeg">
+                            <span class="camera"><ion-icon name="camera"></ion-icon></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-100 r-flexed mt-10">
+                    <div class="username">Seydina GUEYE</div>
+                </div>
+                <div class="w-100 r-flexed mt-5">
+                    <div class="location">
+                        <ion-icon name="location" slot="left"></ion-icon>
+                        Dakar, Sénégal
+                    </div>
+                </div>
+            </div>
+            <div class="grid-row">
+                <div class="grid-col" (click)="navigateForward('tabs/panier')">
+                   <div class="w-100 r-flexed mt-50">
+                        <div class="icon-container"><img src="assets/img/cart-solid.svg" ></div>
+                    </div>
+                    <div class="w-100 r-flexed mt-30">
+                        <div class="label">Votre panier</div>
+                    </div>
+                </div>
+                <div class="grid-col">
+                     <div class="w-100 r-flexed mt-50">
+                        <div class="icon-container"><img src="assets/img/heart-solid.svg" ></div>
+                    </div>
+                    <div class="w-100 r-flexed mt-30">
+                        <div class="label">Vos favoris</div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-row">
+                <div class="grid-col">
+                    <div class="w-100 r-flexed mt-50">
+                        <div class="icon-container"><img src="assets/img/box-solid.svg" ></div>
+                    </div>
+                    <div class="w-100 r-flexed mt-30">
+                        <div class="label">Vos commandes</div>
+                    </div>
+                </div>
+                <div class="grid-col">
+                    <div class="w-100 r-flexed mt-50">
+                        <div class="icon-container"><img src="assets/img/question-solid.svg" ></div>
+                    </div>
+                    <div class="w-100 r-flexed mt-30">
+                        <div class="label">Assistance</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</ion-content>

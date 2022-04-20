@@ -1,0 +1,168 @@
+<app-header slot="top"></app-header>
+<ion-content [scrollEvents]="true">
+
+  <div id="presenting">
+    <div class="img-container">
+      <img src="assets/img/image1.jpg">
+      <div class="relative">
+        <div class="app-logo r-flexed">Shopping</div>
+        <div class="app-slogan r-flexed">Toujours avec le style</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="feed">
+
+    <!--------------------NOUVEAUTE-------------------->
+   <div id="nouveaute" class="ion-margin">
+
+    <div class="section-title">
+      <div class="label">
+        <div class="title">NOUVEAUTES</div>
+      </div>
+      <div class="see-more">
+        <div>voir +</div>
+      </div>
+    </div>
+
+    <div class="slides">
+        <ion-slides pager="false" [options]="slideOptsTwo" #slideWithNav2 (ionSlideDidChange)="SlideDidChange(sliderTwo,slideWithNav2)">
+        
+          <ion-slide *ngFor="let item of todelete">
+           <div class="card" >
+
+              <div class="c-image-container" >
+                <div class="image">
+                  <img class="product-img" src="{{item.image}}"> 
+                  <span class="product-serie"></span>
+                  <span class="product-bdg">NEW</span>               
+                </div>
+
+               </div>
+
+               <div class="product-details">
+                 <div class="p-title">
+                  {{item.name.substring(0, 20)}}
+                  {{item.name.length > 20 ? '...' : ''}}
+                 </div>
+                 <div class="price-tag">{{item.price}}</div>
+
+               </div>
+
+              <div class="c-footer">
+                 <div class="txt">AJOUTER AU PANIER</div>
+              </div>
+           </div>
+          </ion-slide>
+
+        </ion-slides>
+
+        </div>
+
+    </div>
+    <!--------------------END-NOUVEAUTE-------------------->
+
+   <!-------------------MEILLEURES-VENTES--------------------->
+   <div id="nouveaute" class="ion-margin">
+
+    <div class="section-title">
+      <div class="label">
+        <div class="title">MEILLEURES VENTES</div>
+      </div>
+      <div class="see-more">
+        <div>voir +</div>
+      </div>
+    </div>
+
+        <div class="slides">
+        <ion-slides pager="false" [options]="slideOptsTwo" #slideWithNav2 (ionSlideDidChange)="SlideDidChange(sliderTwo,slideWithNav2)">
+        
+          <ion-slide *ngFor="let item of todelete.reverse()">
+           <div class="card" >
+
+              <div class="c-image-container" >
+                <div class="image">
+                  <img class="product-img" src="{{item.image}}"> 
+                  <span class="product-serie"></span>
+                  <span class="product-bdg"></span>               
+                </div>
+
+               </div>
+
+               <div class="product-details">
+                 <div class="p-title">
+                  {{item.name.substring(0, 20)}}
+                  {{item.name.length > 20 ? '...' : ''}}
+                 </div>
+                 <div class="price-tag">{{item.price}}</div>
+
+               </div>
+
+              <div class="c-footer">
+                 <div class="txt">AJOUTER AU PANIER</div>
+              </div>
+           </div>
+          </ion-slide>
+
+        </ion-slides>
+
+        </div>
+
+
+    </div>
+    <!-------------------END-MEILLEURES-VENTES--------------------->
+
+   <!-------------------OFFRES-PROMOS--------------------->
+   <div id="nouveaute" class="ion-margin">
+
+    <div class="section-title">
+      <div class="label">
+        <div class="title">OFFRES & PROMOS</div>
+      </div>
+      <div class="see-more">
+        <div>voir +</div>
+      </div>
+    </div>
+
+        <div class="slides">
+        <ion-slides pager="false" [options]="slideOptsTwo" #slideWithNav2 (ionSlideDidChange)="SlideDidChange(sliderTwo,slideWithNav2)">
+        
+          <ion-slide *ngFor="let item of todelete.reverse()">
+           <div class="card" >
+
+              <div class="c-image-container" >
+                <div class="image">
+                  <img class="product-img" src="{{item.image}}"> 
+                  <span class="product-serie"></span>
+                  <span class="product-bdg">-30%</span>               
+                </div>
+
+               </div>
+
+               <div class="product-details">
+                 <div class="p-title">
+                  {{item.name.substring(0, 20)}}
+                  {{item.name.length > 20 ? '...' : ''}}
+                 </div>
+                 <div class="price-tag">{{item.price}}</div>
+
+               </div>
+
+              <div class="c-footer">
+                 <div class="txt">AJOUTER AU PANIER</div>
+              </div>
+           </div>
+          </ion-slide>
+
+        </ion-slides>
+
+        </div>
+
+    </div>
+    <!-------------------END-OFFRES-PROMOS--------------------->
+
+
+  </div>
+
+  
+</ion-content>

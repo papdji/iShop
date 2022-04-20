@@ -1,0 +1,22 @@
+<ion-tabs #tabs (ionTabsDidChange)="setCurrentTab()">
+
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="home">
+      <ion-icon name="{{homeIcon}}"></ion-icon>
+    </ion-tab-button>
+
+    <ion-tab-button tab="categorie">
+      <ion-icon name="{{categorieIcon}}"></ion-icon>
+    </ion-tab-button>
+
+    <ion-tab-button tab="favoris">
+      <ion-icon name="{{favorisIcon}}"></ion-icon>
+    </ion-tab-button>
+
+    <ion-tab-button tab="plus">
+      <ion-icon name="{{profilIcon}}"></ion-icon>
+    </ion-tab-button>
+
+  </ion-tab-bar>
+
+</ion-tabs>

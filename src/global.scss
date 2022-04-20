@@ -1,0 +1,270 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+//Custom class
+@for $i from 1 through 2500 {
+    .zi-#{$i} {
+        z-index: $i * 1;
+    }
+}
+
+@for $i from 1 through 150 {
+    .lh-#{$i} {
+        line-height: $i * 1px;
+    }
+}
+
+@for $i from 1 through 150 {
+    .fsize-#{$i} {
+        font-size: $i * 1px !important;
+    }
+}
+
+@for $i from 1 through 100 {
+    .w-#{$i} {
+        width: $i * 1%;
+    }
+}
+
+@for $i from 1 through 100 {
+    .h-#{$i} {
+        height: $i * 1%;
+    }
+}
+
+@for $i from 1 through 1000 {
+    .wdpx-#{$i} {
+        width: $i * 1px !important;
+    }
+}
+
+@for $i from 1 through 1000 {
+    .hpx-#{$i} {
+        height: $i * 1px;
+    }
+}
+
+@for $i from 1 through 250 {
+    .p-#{$i} {
+        padding: $i * 1px;
+    }
+}
+
+@for $i from 1 through 250 {
+    .m-#{$i} {
+        margin: $i * 1px;
+    }
+}
+
+@for $i from 1 through 250 {
+    .pt-#{$i} {
+        padding-top: $i * 1px;
+    }
+}
+
+@for $i from 1 through 250 {
+    .pb-#{$i} {
+        padding-bottom: $i * 1px;
+    }
+}
+
+@for $i from 1 through 250 {
+    .pl-#{$i} {
+        padding-left: $i * 1px;
+    }
+}
+
+@for $i from 1 through 250 {
+    .pr-#{$i} {
+        padding-right: $i * 1px;
+    }
+}
+
+@for $i from 1 through 250 {
+    .mb-#{$i} {
+        margin-bottom: $i * 1px;
+    }
+}
+
+@for $i from 1 through 250 {
+    .mt-#{$i} {
+        margin-top: $i * 1px;
+    }
+}
+
+@for $i from 1 through 250 {
+    .ml-#{$i} {
+        margin-left: $i * 1px;
+    }
+}
+
+@for $i from 1 through 250 {
+    .mr-#{$i} {
+        margin-right: $i * 1px;
+    }
+}
+
+@for $i from 1 through 100 {
+    .filter-b-#{$i} {
+        filter: brightness($i * 1%);
+    }
+}
+
+@for $i from 1 through 200 {
+    .border-r-#{$i} {
+        border-radius: $i * 1px;
+    }
+}
+
+@for $i from 1 through 50 {
+    .top-#{$i} {
+        top: $i * 1px;
+    }
+}
+
+
+.r-flexed-o{
+    display: flex;
+    flex-direction: row;
+}
+
+.c-flexed-o{
+    display: flex;
+    flex-direction: column;
+}
+
+.c-flexed{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cb-flexed{
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+}
+
+.r-flexed{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.rsb-flexed{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.rr-flexed{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+}
+
+.rl-flexed{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.align-center{
+    align-self: center;
+}
+
+.align-top{
+    align-self: flex-start;
+}
+
+.align-bottom{
+    align-self: flex-end;
+}
+
+
+img{
+    filter: brightness(1.065);
+}
+
+ion-toolbar{
+    color: white;
+}
+
+ion-tab-button ion-icon,ion-label{
+    color:var(--ion-color-step-100);
+}
+
+ion-tab-button ion-icon.activated{
+    color:red;
+}
+
+ion-page{
+    padding: 0px;
+    margin: 0px;
+}
+
+ion-toolbar{
+    padding: 0px;
+    margin: 0px;
+}
+
+app-header{
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+ion-content{
+  --background:#f2f2f2;
+  color: #222;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.sliding{
+  position: relative;
+  top: 5px;
+  animation-name: slide;
+  animation-duration: 0.99s;  
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide {
+  from {right: -330px;}
+  to {right: 0px;}
+}
+
